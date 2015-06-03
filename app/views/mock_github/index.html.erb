@@ -1,5 +1,7 @@
 <title>Search</title>
-<form action = "https://github.com/TurnerMooreDavis?tab=repositories">
-  <input type="text" id="profile" placeholder="Github Profile Name" />
-  <button type="submit">Search</button>
-</form>
+<h1>Please enter a Github Profile <h1>
+<%=form_tag("/mock_github/profile", method: "post") do %>
+<%=label_tag(:name, "Profile:" ) %>
+<%=text_field_tag(:name) %>
+<%=submit_tag("Search") %>
+<% end %>

@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get 'mock_github/index'
+  root "mock_github#index"
 
-  get 'mock_github/profile'
+  post 'mock_github/profile'
+
+  post 'mock_github/call_github'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
