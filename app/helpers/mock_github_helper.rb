@@ -1,0 +1,2 @@
+module MockGithubHelper
+end
